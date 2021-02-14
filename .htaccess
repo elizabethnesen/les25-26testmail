@@ -1,0 +1,4 @@
+RewriteEngine on 
+RewriteCond %{REQUEST_URI} ^/ru/services/?.$ 
+RewriteCond %{REQUEST_METHOD} =GET 
+RewriteRule ^(.)$ http://timeweb/ru/new$1 [R=405,L]
